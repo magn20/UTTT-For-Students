@@ -4,9 +4,8 @@ import dk.easv.bll.field.IField;
 import dk.easv.bll.game.GameState;
 import dk.easv.bll.game.IGameState;
 import dk.easv.bll.move.IMove;
-import java.util.List;
-import java.util.Objects;
-import java.util.Random;
+
+import java.util.*;
 
 public class ExampleSneakyBot implements IBot{
     final int moveTimeMs = 1000;
@@ -57,6 +56,7 @@ public class ExampleSneakyBot implements IBot{
             if (simulator.getGameOver()==GameOverState.Win){
                 //System.out.println("Found a win, :)");
                 return winnerMove; // Hint you could maybe save multiple games and pick the best? Now it just returns at a possible victory
+
             }
             count++;
         }

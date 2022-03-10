@@ -21,7 +21,7 @@ public class RandomBot implements IBot {
     @Override
     public IMove doMove(IGameState state) {
 
-        
+
 
         List<IMove> moves = state.getField().getAvailableMoves();
         if (moves.size() > 0) {
